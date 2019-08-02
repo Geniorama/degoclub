@@ -1,0 +1,213 @@
+//Mobile devices
+
+@media (max-width: 480px){
+    .section{
+        padding: 2rem 1rem;
+    }
+
+    .space-5{
+        margin: 2rem 0;
+    }
+
+    .card{
+        padding: 1rem !important;
+    }
+
+    //Owl-carousel
+    .owl-carousel{
+        .item{
+            .caption{
+                font-size: 1rem;
+                transform: scale(.9);
+            }
+        }
+    }
+    
+    //Header
+    .header-default{
+        top: 0;
+        .nav-brand-theme{
+            width: 100%;
+        }
+        .container-toggle{
+            
+            padding: 0; 
+        }
+        .button-toggle{
+            border: none;
+            background-color: $blue-light;
+            color: #fff;
+            padding: .5rem 1rem;
+            border-radius: 5px;
+        }
+        .nav-theme{
+            border-top: 1px solid #ccc;
+            padding: .5rem 0 2rem 0;
+            display: none;
+            .nav-item{
+                padding: .5rem;
+            }
+        }
+
+        
+    }
+
+    .hide-mobile{
+        display: none;
+    }
+
+    //Menu
+    .container-toggle{
+        display: block;
+    }
+
+    .nav-theme{
+        .nav{
+            flex-direction: column;
+        }
+    }
+
+    //Slider home
+    .section-slider{
+        margin-top: 4rem;
+    }
+
+    //SECTIONS
+
+    .owl-slider-home{
+        height: 200px;
+
+        .owl-dots{
+            bottom: 0;
+        }
+
+        .item{
+            .caption{
+            height: 200px;
+            padding: 0;
+            line-height: 1.5rem;
+            
+            }   
+        }
+    }
+
+    .items .item{
+        margin-bottom: 2rem;
+
+        img{
+            width: 40% !important;
+        }
+    }
+
+    .owl-testimonial{
+        padding: 0;
+    }
+
+    .section#escribenos{
+        padding-bottom: 2rem !important;
+    }
+
+    .footer{
+        padding: 2rem;
+
+        .item{
+            margin-bottom: 2rem;
+        }
+    }
+
+    //PAGES
+
+    .section-interior{
+        padding: 2rem;
+    }
+    .column-extend{
+        padding: 0 !important;
+        .heading-form{
+            line-height: 2rem;
+            font-size: 1.8rem;
+        }
+
+        .subheading-form{
+            font-size: 1rem;
+        }
+        .border-form{
+            padding: 0;
+        }
+    }
+
+    /*About*/
+
+    .t-down-left{
+        transform: translate(0) !important;
+    }
+    
+    .t-down-right{
+        transform: translate(0) !important;
+    }
+
+    .hero{
+        height: 300px;
+
+        .bg-hero{
+            height: 100%;
+            object-fit: cover;
+        }
+        .caption-hero{
+            height: 300px;
+
+            .container-img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+    .footer{
+        padding-bottom: 5rem;
+        .register-nav{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1rem !important;
+            .link{
+                margin-right: 0;
+            }
+
+            .btn{
+                margin-top: 1rem;
+            }
+        }
+    }
+
+    /*404*/
+
+    .one-section{
+        padding: 5rem 0;
+        height: 100%;
+        .error{
+            font-size: 4rem;
+            font-family: 'Montserrat', sans-serif;
+            color: $blue-light;
+        }
+
+        .msj-error{
+            font-size: 1rem;
+        }
+    }
+
+
+    /*Float buttons*/
+
+    .btn-whatsapp{
+        left: 1rem;
+        bottom: 1.5rem;
+    }
+
+    .back-to-top{
+        bottom: 1.5rem;
+        right: 45%;
+    }
+
+}
+
+//Desktop
+
