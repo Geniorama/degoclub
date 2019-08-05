@@ -6,7 +6,7 @@
             <div class="col-12 col-md-6 column-extend p-5 text-center">
                 <p class="heading-form">¡Es muy sencillo registrarte!</p>
                 <p class="subheading-form">Completa el formulario y comienza a usar <span class="text-bold">DEGO</span></p>
-                <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" class="border-form" method="POST">
+                <form class="border-form" id="form-registro">
                     <div class="row">
                         <div class="col-12 col-md-6">
                             <div class="form-group">
@@ -40,15 +40,9 @@
                             </div>
                         </div>
                         <div class="col-12">
-                            <?php if (!empty($error_clave)): ?>
-								<div class="alert alert-danger" role="alert"><?php echo $error_clave; ?></div>
-							<?php endif ?>
-                            <?php if (!empty($error_usuario)): ?>
-								<div class="alert alert-danger" role="alert"><?php echo $error_usuario; ?></div>
-							<?php endif ?>
-                            <?php if (!empty($error_coincidencia)): ?>
-								<div class="alert alert-danger" role="alert"><?php echo $error_coincidencia; ?></div>
-							<?php endif ?>
+                            <div id="alerta">
+                                
+                            </div>
                             <div class="form-group">
                                 <button class="btn btn-primary btn-block" type="submit">enviar</button>
                             </div>

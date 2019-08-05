@@ -5,17 +5,10 @@ require "functions.php";
 
 $conexion = conexion_db($bd_config);
 
-//Errores
-$exito = '';
-$error_clave = '';
-$error_usuario = '';
-$error_coincidencia = '';
 
 //Captura de datos de formulario
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	
-	$destino = 'webmaster@univercity.com.co';
+	/*$destino = 'webmaster@univercity.com.co';
     $nombre = limpiarTexto($_POST['nombre']);
     $apellido = limpiarTexto($_POST['apellido']);
 	$correo = limpiarCorreo($_POST['email']);
@@ -24,7 +17,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $conf_clave = $_POST['clave2'];
     $conf_clave_cifrada = password_hash($conf_clave, PASSWORD_DEFAULT);
 
-    $verificacion = password_verify($clave, $conf_clave_cifrada);
+    if ($nombre === '') {
+        echo json_encode('Por favor introduce un nombre');
+    } else {
+        echo json_encode('Ya introduciste el nombre');
+    }*/
+
+    /*$verificacion = password_verify($clave, $conf_clave_cifrada);
     
     validar_clave($clave,$error_clave);
 
@@ -45,41 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             
                 mail($destino, "Contacto web", $contenido, $headers);
 
-                //Mailchimp Integration
-
-                $datetime=date("d-m-Y H:i:s");
-	 
-                $server="us20";
-                $listid="b7ebd6bb8b";
-                $apikey="c89c52d30dd15f6a38efa4fe1dfd560e-us20";
-                
-                $auth = base64_encode( 'user:'.$apikey );
-                
-                $data = array(
-                    'apikey'        => $apikey,
-                    'email_address' => $correo,
-                    'status'        => 'subscribed',
-                    'merge_fields'  => array(
-                        'FNAME' => utf8_encode( $nombre ),
-                        'LNAME' => utf8_encode( $apellido )
-                        )
-                    );
-                
-                $json_data = json_encode($data);
-                
-                $ch = curl_init();
-                curl_setopt($ch, CURLOPT_URL, 'https://'.$server.'.api.mailchimp.com/3.0/lists/'.$listid.'/members/');
-                curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json','Authorization: Basic '.$auth));
-                curl_setopt($ch, CURLOPT_USERAGENT, 'PHP-MCAPI/2.0');
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-                curl_setopt($ch, CURLOPT_POST, true);
-                curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-                curl_setopt($ch, CURLOPT_POSTFIELDS, $json_data);
-                
-                $response = curl_exec($ch);
-
-                //end Mailchimp
+               
 
                 header('Location:registro-exitoso.php');
             } else {
@@ -88,9 +53,46 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         } else {
             $error_coincidencia .="<br/>Las contraseñas deben conincidir";
         }
-    }
+    }*/
 
-}
+
+
+     /*Mailchimp Integration
+
+     $datetime=date("d-m-Y H:i:s");
+	 
+     $server="us20";
+     $listid="b7ebd6bb8b";
+     $apikey="c89c52d30dd15f6a38efa4fe1dfd560e-us20";
+     
+     $auth = base64_encode( 'user:'.$apikey );
+     
+     $data = array(
+         'apikey'        => $apikey,
+         'email_address' => $correo,
+         'status'        => 'subscribed',
+         'merge_fields'  => array(
+             'FNAME' => utf8_encode( $nombre ),
+             'LNAME' => utf8_encode( $apellido )
+             )
+         );
+     
+     $json_data = json_encode($data);
+     
+     $ch = curl_init();
+     curl_setopt($ch, CURLOPT_URL, 'https://'.$server.'.api.mailchimp.com/3.0/lists/'.$listid.'/members/');
+     curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json','Authorization: Basic '.$auth));
+     curl_setopt($ch, CURLOPT_USERAGENT, 'PHP-MCAPI/2.0');
+     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+     curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+     curl_setopt($ch, CURLOPT_POST, true);
+     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+     curl_setopt($ch, CURLOPT_POSTFIELDS, $json_data);
+     
+     $response = curl_exec($ch);
+
+     
+     end Mailchimp*/
 
 
 $clPag ="secondary";
