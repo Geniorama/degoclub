@@ -93,8 +93,6 @@ $conexion = conexion_db($bd_config);
 
      
      end Mailchimp*/
-
-
 $clPag ="secondary";
 $idPag ="register-nav";
 include_once "header.php";

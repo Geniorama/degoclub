@@ -152,13 +152,12 @@
 var respuesta = document.getElementById('alerta');
 var formulario = document.getElementById('form-registro');
 
+
+
 formulario.addEventListener('submit', function(e) {
     e.preventDefault();
 
     var datos = new FormData(formulario);
-
-    console.log(datos.get('nombre'));
-    console.log(datos.get('apellido'));
 
     fetch('envio.php',{
         method: 'POST',
@@ -167,11 +166,17 @@ formulario.addEventListener('submit', function(e) {
 
     .then(res => res.json())
     .then(data => {
-        console.log(data)
-        if (data === 'error') {
-            respuesta.innerHTML = `
-            <div class="alert alert-success" role="alert">Error</div>
-            `
+
+        var container_class = '';
+
+        if (data.includes('Error')) {
+            container_class = 'alert-danger';
+        } else {
+            container_class = 'alert-success';
         }
+
+        respuesta.innerHTML = `
+            <div class="alert ${container_class}" role="alert">${data}</div>
+            `
     })
 })
