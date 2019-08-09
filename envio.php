@@ -21,7 +21,15 @@
     } elseif ($error_clave) {
       echo json_encode("Error: " . $error_clave);  
     } else {
-        echo json_encode($nombre . " te haz registrado con éxito");
+        $sql_usuario = 'SELECT * FROM users WHERE (correo = :correo)';
+        $statement = $conexion->prepare($sql_usuario);
+        $statement->execute(array(':correo' => $correo));
+        $resultadoUsuario = $statement->fetch();
         
-        insertarUsuario($conexion, $nombre, $apellido, $correo, $clave_cifrada);
+        if (!$resultadoUsuario) {
+            insertarUsuario($conexion, $nombre, $apellido, $correo, $clave_cifrada);
+            echo json_encode($nombre . " te haz registrado con éxito");
+        } else{
+            echo json_encode("Error: ya existe un usuario registrado con el correo " . "<strong>" . $correo . "</strong>. Prueba con otro correo ");
+        }  
     }
