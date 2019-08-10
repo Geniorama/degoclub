@@ -39,7 +39,7 @@
                     <div class="card-body">
                         <h3 class="card-title title"><strong>MISIÓN</strong></h3>
                         <p class="card-text text-justify">
-                        Somos el canal digital que apoya  el  desarrollo  de los intermediarios de seguros en colombia, para crear una comunidad de profesionales que saben utilizar herramientas digitales para  ayudar a otros a proteger  sus familias y  su patrimonio  logrando asi su propio desarrollo personal y profesional.
+                        Somos un canal que apoya  el  desarrollo  de los intermediarios de seguros en Colombia, para crear una comunidad de profesionales que saben utilizar herramientas digitales para  ayudar a otros a proteger  sus familias y  su patrimonio  logrando así su propio desarrollo personal y profesional.
                         </p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                     <div class="card-body">
                         <h3 class="card-title title"><strong>VISIÓN</strong></h3>
                         <p class="card-text text-justify">
-                        Para el año 2025 seremos una organización de soporte permanente,  brindando soluciones integrales para los intermediarios de seguros, aportando herramientas digitales eficentes, y competentes que servirán para reducir las cargas operativas y administrativas. Con más de 200 intermediarios de seguros afiliados, y comprometidos en la calidad de servicio al cliente y su fidelización.  
+                        Para el año 2025 seremos una organización de soporte permanente,  brindando soluciones integrales para los intermediarios de seguros, aportando herramientas digitales eficientes, y competentes que servirán para reducir las cargas operativas y administrativas, con mas de 200 intermediarios de seguros afiliados, y comprometidos en la calidad de servicio al cliente y su fidelización.
                         </p>
                     </div>
                 </div>
@@ -70,4 +70,4 @@
     </div>
 </section>
 
-<?php include_once "testimonios.php" ?>
+<?php //include_once "testimonios.php" ?>

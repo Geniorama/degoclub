@@ -5,7 +5,7 @@
             <div class="item">
                 <img src="src/img/slider-principal.jpg" alt="" class="img-fluid">
                 <div class="caption d-flex align-items-center text-center justify-content-center">
-                    <p><span class="heading">Bienvenido/a</span><br>Estás en dego club, donde podrás disponer de herramientas digitales 24/7, asesoría personalizada, actualización del sector asegurador, entre otros beneficios</p>
+                    <p><span class="heading">Bienvenido/a</span><br>Estás en <strong>DEGO CLUB</strong>, donde podrás disponer de herramientas digitales 24/7, asesoría personalizada, actualización del sector asegurador, entre otros beneficios</p>
                 </div>
             </div>
             <div class="item">
@@ -18,14 +18,14 @@
             <div class="item">
                 <img src="src/img/slider-3.jpg" alt="" class="img-fluid">
                 <div class="caption d-flex align-items-center text-center justify-content-center flex-column">
-                    <p><span class="heading">Descarga Gratis</span><br>Nuestros <strong>DEGO</strong> tips para intermediarios de seguros</p>
+                    <p><span class="heading">Descarga Gratis</span><br>Nuestros <strong>DEGO TIPS</strong> para intermediarios de seguros</p>
                     <a href="registro.php" class="btn btn-primary mt-5">DESCARGAR <i class="fas fa-download"></i></a>
                 </div>
             </div>
             <div class="item">
                 <img src="src/img/slider-4.jpg" alt="" class="img-fluid">
                 <div class="caption d-flex align-items-center text-center justify-content-center flex-column">
-                    <p><span class="heading">¿Quieres aumentar tus ingresos en la venta de seguros?</span><br>Recibe Gratis capacitación en línea</p>
+                    <p><span class="heading">¿Quieres aumentar tus ingresos en la venta de seguros?</span><br>Haz parte de <strong>DEGO CLUB.</strong> Recibe Gratis capacitación en línea</p>
                     <a href="registro.php" class="btn btn-primary mt-5">REGISTRARME</a>
                 </div>
             </div>
@@ -117,8 +117,8 @@
             </div>
         </div>
     </section>
-
-    <section class="section blue-light dark" id="capturas-de-pantalla">
+    <hr>
+    <section class="section blue-light dark d-none" id="capturas-de-pantalla">
         <div class="container">
             <div class="row text-center">
                 <div class="col-12">
@@ -171,7 +171,7 @@
         </div>
     </section>
 
-    <?php include_once "testimonios.php" ?>
+    <?php //include_once "testimonios.php" ?>
 
     <section class="section blue-dark dark pb-0" id="escribenos">
         <div class="container">

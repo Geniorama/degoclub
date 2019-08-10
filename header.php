@@ -32,7 +32,7 @@
                             <li class="nav-item"><a href="index.php#testimonios" class="nav-link">Testimonios</a></li>
                             <li class="nav-item"><a href="index.php#escribenos" class="nav-link">Escríbenos</a></li>
                             <li class="nav-item d-none"><a href="#" class="nav-link">Blog</a></li>
-                            <li class="nav-item" id="inicia-sesion"><a href="login.php" class="nav-link"><i class="fas fa-key"></i> Inicia sesión</a></li>
+                            <li class="nav-item" id="inicia-sesion"><a href="login.php" class="nav-link d-none"><i class="fas fa-key"></i> Inicia sesión</a></li>
                             <li class="nav-item"><a href="#" class="nav-link btn btn-primary"><i class="fas fa-user-plus"></i> Regístrate</a></li>
                         </ul>
                     </nav>

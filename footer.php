@@ -9,21 +9,21 @@
                     </ul>
                 </div>
             </div>
-            <div class="row">
+            <div class="row justify-content-between">
                 <div class="col-12 col-md-3 contacto item">
                     <h4>Contáctanos</h4>
                     <ul class="nav flex-column">
                         <li class="nav-item"><a href="tel:0312151578" class="nav-link"><i class="fas fa-headset" target="_blank"></i> (57+1) 2151578</a></li>
                         <li class="nav-item"><a href="tel:+573202735425" class="nav-link"><i class="fab fa-whatsapp" target="_blank"></i> (+57) 3202735425</a></li>
-                        <li class="nav-item"><a href="https://goo.gl/maps/2ssEvWNHuY32qcUa8" class="nav-link" target="_blank"><i class="fas fa-map-marked-alt"></i> Calle 55 No. 80-22 Of. 407</a></li>
+                        <li class="nav-item"><a href="https://goo.gl/maps/K4Vr8o89xB4zdpYx8" class="nav-link" target="_blank"><i class="fas fa-map-marked-alt"></i> Av 19 No. 125-65 Of.203</a></li>
                         <li class="nav-item"><a href="mailto:info@degoclub.com" class="nav-link"><i class="far fa-envelope"></i> info@degoclub.com</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-3 item">
                     <h4>Sobre DEGO CLUB</h4>
-                    <p>Somos una organización de profesionales en seguros, con amplia experiencia y trayectoria en consultoria y administracion de riesgos,  de diferentes sectores economicos, y de todos los ramos de seguros,  al servicio de la  intermediacion del sector, apoyados con innovacion y tecnologia  para la integracion de procesos  y gestion de  negocios,  con el proposito de poder  prestar un mejor servicio con  eficacia y efectividad, creando canales de interaccion para atender los requerimientos de los distintos  clientes en forma rapida y oportuna.</p>
+                    <p class="text-justify" style="letter-spacing: 1px;">Somos un club de intermediarios de seguros en Colombia, que interactua en busca de su desarrollo personal y profesional, mediante  herramientas disponibles 24/7, que invitan  a la productividad y competencia.</p>
                 </div>
-                <div class="col-12 col-md-3 item">
+                <div class="col-12 col-md-3 item d-none">
                     <h4>Blog</h4>
                     <div class="row">
                         <div class="col-6 col-md-6 mb-2">
@@ -43,7 +43,7 @@
             </div>
             
             <div class="register-nav text-center mt-5">
-                <a href="login.php" class="link"><i class="fas fa-key"></i> Inicia sesión</a>
+                <a href="login.php" class="link d-none"><i class="fas fa-key"></i> Inicia sesión</a>
                 <a href="registro.php" class="btn btn-secondary"><i class="fas fa-user-plus"></i> REGISTRATE</a>
             </div>
             <div class="row mt-5">
