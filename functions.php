@@ -19,6 +19,7 @@ function comprobar_sesion(){
 function limpiarTexto($dato)
 {
 	$dato = filter_var($dato, FILTER_SANITIZE_STRING);
+	$dato = utf8_decode($dato);
 
 	return $dato;
 }
